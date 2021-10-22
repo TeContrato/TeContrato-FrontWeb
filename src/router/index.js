@@ -35,29 +35,39 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
   },
   {
+    path: '/projects',
+    name: 'project',
+    component: () => import(/* webpackChunkName: "about" */ '../views/projectInProgressContractor.vue')
+  },
+  {
+    path: '/controlMenuContractor',
+    name: 'controlMenuContractor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
+  },
+  {
     path:'/searchcontractor',
     name:'searchcontractor',
-    component: SearchContractor
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
   },
   {
     path:'/profilecontractor',
     name:'profilecontractor',
-    component:ProfileContractor
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProfileContractor')
   },
   {
-    path:'/projectprogress',
+	path:'/projectprogress',
     name:'projectprogress',
-    component: ProjectInProgress
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProjectInProgress')
   },
   {
-    path:'/controlmenu',
+	path:'/controlmenu',
     name:'controlmenu',
-    component: ControlMenu
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ControlMenu')
   },
   {
-    path:'/finalproject',
+	path:'/finalproject',
     name:'finalproject',
-    component: FinalProject
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
   },
 ]
 
