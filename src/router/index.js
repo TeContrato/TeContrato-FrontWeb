@@ -52,6 +52,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
   },
   {
+
     path:'/searchcontractor',
     name:'searchcontractor',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
@@ -62,22 +63,36 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProfileContractor')
   },
   {
-	path:'/projectprogress',
+
+    path:'/projectprogress',
+
+	  path:'/projectprogress',
+
     name:'projectprogress',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProjectInProgress')
   },
   {
-	path:'/controlmenu',
+
+    path:'/controlmenu',
+    path:'/controlmenu',
+
     name:'controlmenu',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/ControlMenu')
   },
   {
+
+    path:'/finalproject',
+    name:'finalproject',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
+  },
+
 	path:'/finalproject',
     name:'finalproject',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
   },
 
   }
+
 ]
 
 const router = new VueRouter({
