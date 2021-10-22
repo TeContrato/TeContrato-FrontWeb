@@ -1,61 +1,25 @@
 <template>
   <v-app>
-        <v-container>
-      <h1>Hello Lenin, What do you want to do today?</h1>
+    <v-flex>
+      <v-card class="mb-6">
 
-      <v-layout wrap justify-space-between >
-        <v-flex xs12 md6 offset-(size)(0-12) >
-          <v-card>
-            <v-card-title>Notifications</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6>
-          <v-card>
-            <v-card-title>Who visited your profile?</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6>
-          <v-card>
-            <v-card-title>Projects available</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6>
-          <v-card>
-            <v-card-title>Projects almost finish</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6>
-          <v-card>
-            <v-card-title>Messages</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
-        <v-flex xs12 md6>
-          <v-card>
-            <v-card-title>Last project listed</v-card-title>
-            <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-            </v-card-text>
-            <v-card-actions ><v-btn small color="primary" right >see all</v-btn></v-card-actions>
-          </v-card>
-        </v-flex>
+      </v-card>
+      <v-layout row wrap>
+
+        <v-container grid-list-xl>
+          <v-layout column>
+
+            <offers-dashboard></offers-dashboard>
+            <offers-dashboard></offers-dashboard>
+            <offers-dashboard></offers-dashboard>
+            <offers-dashboard></offers-dashboard>
 
 
+
+          </v-layout>
+        </v-container>
       </v-layout>
-    </v-container>
+    </v-flex>
     <navigation-bar></navigation-bar>
 
 
@@ -64,8 +28,7 @@
 </template>
 
 <script>
-import appbar from "../components/appbar";
-import Navbar from "../components/Navbar";
+
 import OffersDashboard from "../components/offers-dashboard";
 import NavigationBar from "../components/navigation-bar";
 export default {
@@ -73,8 +36,7 @@ export default {
   components:{
     NavigationBar,
     OffersDashboard,
-    appbar,
-    Navbar,
+
 
   }
 }
