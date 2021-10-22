@@ -8,8 +8,8 @@
 
         <h2 >Te Contrato</h2>
         <v-tabs>
-          <v-tab>Sign-In</v-tab>
-          <v-tab>Sign-Up</v-tab>
+          <v-tab>Sign In</v-tab>
+          <v-tab>Sign Up</v-tab>
           <v-tab-item><log-in-form></log-in-form></v-tab-item>
           <v-tab-item><register></register></v-tab-item>
         </v-tabs>
