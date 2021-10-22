@@ -33,7 +33,32 @@ const routes = [
     path: '/register',
     name: 'register',
     component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
-  }
+  },
+  {
+    path:'/searchcontractor',
+    name:'searchcontractor',
+    component: SearchContractor
+  },
+  {
+    path:'/profilecontractor',
+    name:'profilecontractor',
+    component:ProfileContractor
+  },
+  {
+    path:'/projectprogress',
+    name:'projectprogress',
+    component: ProjectInProgress
+  },
+  {
+    path:'/controlmenu',
+    name:'controlmenu',
+    component: ControlMenu
+  },
+  {
+    path:'/finalproject',
+    name:'finalproject',
+    component: FinalProject
+  },
 ]
 
 const router = new VueRouter({
