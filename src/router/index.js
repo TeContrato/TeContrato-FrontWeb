@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home
   },
   {
@@ -35,41 +35,30 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
   },
   {
-    path: '/projects',
-    name: 'project',
-    component: () => import(/* webpackChunkName: "about" */ '../views/projectInProgressContractor.vue')
-  },
-  {
-    path: '/controlMenuContractor',
-    name: 'controlMenuContractor',
-    component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
-  },
-  {
     path:'/searchcontractor',
     name:'searchcontractor',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
+    component: SearchContractor
   },
   {
     path:'/profilecontractor',
     name:'profilecontractor',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProfileContractor')
+    component:ProfileContractor
   },
   {
-  path:'/projectprogress',
-      name:'projectprogress',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProjectInProgress')
+    path:'/projectprogress',
+    name:'projectprogress',
+    component: ProjectInProgress
   },
   {
-  path:'/controlmenu',
-      name:'controlmenu',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ControlMenu')
+    path:'/controlmenu',
+    name:'controlmenu',
+    component: ControlMenu
   },
   {
-  path:'/finalproject',
-      name:'finalproject',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
+    path:'/finalproject',
+    name:'finalproject',
+    component: FinalProject
   },
-
 ]
 
 const router = new VueRouter({

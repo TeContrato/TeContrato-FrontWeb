@@ -33,31 +33,5 @@
       "finish_Date": "Mañana"
     }
 
-  ],
-  "projects": [
-    {
-      "id": 1,
-      "name": "Kitchen Project",
-      "company": "Company 1",
-      "description": "lorem",
-      "price": 1000,
-      "finish_Date": "12/10/21"
-    },
-    {
-      "id": 2,
-      "name": "Living Room Project ",
-      "company": "Company 1",
-      "description": "lorem",
-      "price": 3000,
-      "finish_Date": "01/06/22"
-    },
-    {
-      "id": 3,
-      "name": "Backyard Project",
-      "company": "Company 1",
-      "description": "lorem",
-      "price": 2500,
-      "finish_Date": "11/30/21"
-    }
   ]
 }
