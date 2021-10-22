@@ -7,19 +7,14 @@
       <div  id="formContent">
 
         <h2 >Te Contrato</h2>
-        <form v-on:submit.prevent="login">
-          <input type="text" id="login" class="fadeIn second" name="login" placeholder="usuario" v-model="usuario">
-          <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" v-model="password">
-          <router-link :to="{name:'dashboard'}">
-          <input type="submit" class="fadeIn fourth" value="Log In" >
-          </router-link>
-        </form>
+        <v-tabs>
+          <v-tab>Sign In</v-tab>
+          <v-tab>Sign Up</v-tab>
+          <v-tab-item><log-in-form></log-in-form></v-tab-item>
+          <v-tab-item><register></register></v-tab-item>
+        </v-tabs>
         <div>
-        <div id="formFooter">
-          <router-link :to="{name:'register'}">
-            <a class="underlineHover" href="#">    New User? </a>
-          </router-link>
-        </div>
+
       </div>
     </div>
   </div>
@@ -29,9 +24,13 @@
 <script>
 // @ is an alias to /src
 import axios from "axios";
+import LogInForm from "@/components/log-in-form.vue"
+import Register from "@/components/register.vue"
 export default {
   name: 'Home',
   components: {
+    LogInForm,
+    Register
   },
   data:function (){
     return{
