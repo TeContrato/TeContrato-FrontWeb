@@ -39,7 +39,44 @@ const routes = [
   {
     path: '/register',
     name: 'register',
-    component: Register
+    component: () => import(/* webpackChunkName: "about" */ '../views/register.vue')
+  },
+  {
+    path: '/projects',
+    name: 'project',
+    component: () => import(/* webpackChunkName: "about" */ '../views/projectInProgressContractor.vue')
+  },
+  {
+    path: '/controlMenuContractor',
+    name: 'controlMenuContractor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
+  },
+  {
+    path:'/searchcontractor',
+    name:'searchcontractor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
+  },
+  {
+    path:'/profilecontractor',
+    name:'profilecontractor',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProfileContractor')
+  },
+  {
+	path:'/projectprogress',
+    name:'projectprogress',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProjectInProgress')
+  },
+  {
+	path:'/controlmenu',
+    name:'controlmenu',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ControlMenu')
+  },
+  {
+	path:'/finalproject',
+    name:'finalproject',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
+  },
+
   }
 ]
 
