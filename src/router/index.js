@@ -1,13 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import LogInForm from "@/components/log-in-form.vue"
+import Register from "@/components/register.vue"
+import Home from "@/views/Home.vue"
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
+  },
+  {
+    path: '/log-in',
+    name: 'log-in-form',
+    component: LogInForm
   },
   {
     path: '/dashboard',
@@ -69,6 +76,8 @@ const routes = [
     name:'finalproject',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
   },
+
+  }
 ]
 
 const router = new VueRouter({
