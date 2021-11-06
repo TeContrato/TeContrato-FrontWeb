@@ -52,45 +52,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
   },
   {
-    path:'/searchcontractor',
-    name:'searchcontractor',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
-  },
-  {
-    path:'/profilecontractor',
-    name:'profilecontractor',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProfileContractor')
-  },
-  {
-
-    path:'/projectprogress',
-
-	  path:'/projectprogress',
-
-    name:'projectprogress',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ProjectInProgress')
-  },
-  {
-
-    path:'/controlmenu',
-    path:'/controlmenu',
-
-    name:'controlmenu',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/ControlMenu')
-  },
-  {
-
-    path:'/finalproject',
-    name:'finalproject',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
-  },
-
-	path:'/finalproject',
-    name:'finalproject',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Project/FinalProject')
-  },
-
-  }
     path: '/budget',
     name: 'budget',
     component: () => import(/* webpackChunkName: "about" */ '../views/budget')

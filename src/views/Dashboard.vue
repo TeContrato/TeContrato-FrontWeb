@@ -64,8 +64,6 @@
 </template>
 
 <script>
-import appbar from "../components/appbar";
-import Navbar from "../components/Navbar";
 import OffersDashboard from "../components/offers-dashboard";
 import NavigationBar from "../components/navigation-bar";
 export default {
@@ -73,8 +71,6 @@ export default {
   components:{
     NavigationBar,
     OffersDashboard,
-    appbar,
-    Navbar,
 
   }
 }

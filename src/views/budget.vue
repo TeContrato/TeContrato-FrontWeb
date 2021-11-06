@@ -5,24 +5,24 @@
         <h1>New Budget</h1>
       </v-col>
 
-    <spacer>
-    </spacer>
+      <spacer>
+      </spacer>
       <v-col   cols="2"
                sm="6"
                md="5">
 
-          <v-text-field label="Project's name">
-          </v-text-field>
-          <v-text-field label="Description"
-          > </v-text-field>
-          <v-text-field label="Time"
-          > </v-text-field>
-          <v-select label="Status"
-          ></v-select>
-          <v-text-field v-model="name" label="Search by name"></v-text-field>
-          <v-btn small @click="searchTitle">
-            Search
-          </v-btn>
+        <v-text-field label="Project's name">
+        </v-text-field>
+        <v-text-field label="Description"
+        > </v-text-field>
+        <v-text-field label="Time"
+        > </v-text-field>
+        <v-select label="Status"
+        ></v-select>
+        <v-text-field v-model="name" label="Search by name"></v-text-field>
+        <v-btn small @click="searchTitle">
+          Search
+        </v-btn>
         <v-col>
           <v-card class="mx-auto" tile>
             <v-card-title>Components</v-card-title>
@@ -50,60 +50,60 @@
 
       <v-col cols="8" md="4">
 
-            <div class="submit-form mt-3 mx-auto">
-              <p class="headline">Add Material</p>
-              <v-img
-                  height="250"
-                  src="https://previews.123rf.com/images/grafner/grafner1101/grafner110100114/8676488-un-conjunto-de-un-mont%C3%B3n-de-diferentes-herramientas-y-materiales-de-trabajo.jpg"
-              ></v-img>
-              <div v-if="!submitted">
-                <v-form ref="form" lazy-validation>
-                  <v-text-field
-                      v-model="budget.name"
-                      :rules="[(v) => !!v || 'Title is required']"
-                      label="name"
-                      required
-                  ></v-text-field>
+        <div class="submit-form mt-3 mx-auto">
+          <p class="headline">Add Material</p>
+          <v-img
+              height="250"
+              src="https://previews.123rf.com/images/grafner/grafner1101/grafner110100114/8676488-un-conjunto-de-un-mont%C3%B3n-de-diferentes-herramientas-y-materiales-de-trabajo.jpg"
+          ></v-img>
+          <div v-if="!submitted">
+            <v-form ref="form" lazy-validation>
+              <v-text-field
+                  v-model="budget.name"
+                  :rules="[(v) => !!v || 'Title is required']"
+                  label="name"
+                  required
+              ></v-text-field>
 
-                  <v-text-field
-                      v-model="budget.quantity"
-                      :rules="[(v) => !!v || 'Description is required']"
-                      label="quantity"
-                      required
-                  ></v-text-field>
-                  <v-text-field
-                      v-model="budget.price"
-                      :rules="[(v) => !!v || 'Description is required']"
-                      label="price"
-                      required
-                  ></v-text-field>
-                </v-form>
+              <v-text-field
+                  v-model="budget.quantity"
+                  :rules="[(v) => !!v || 'Description is required']"
+                  label="quantity"
+                  required
+              ></v-text-field>
+              <v-text-field
+                  v-model="budget.price"
+                  :rules="[(v) => !!v || 'Description is required']"
+                  label="price"
+                  required
+              ></v-text-field>
+            </v-form>
 
-                <v-btn color="primary" class="mt-3" @click="saveTutorial">Submit</v-btn>
-              </div>
+            <v-btn color="primary" class="mt-3" @click="saveTutorial">Submit</v-btn>
+          </div>
 
-              <div v-else>
-                <v-card class="mx-auto">
-                  <v-card-title>
-                    Submitted successfully!
-                  </v-card-title>
+          <div v-else>
+            <v-card class="mx-auto">
+              <v-card-title>
+                Submitted successfully!
+              </v-card-title>
 
-                  <v-card-subtitle>
-                    Click the button to add new budget.
-                  </v-card-subtitle>
+              <v-card-subtitle>
+                Click the button to add new budget.
+              </v-card-subtitle>
 
-                  <v-card-actions>
-                    <v-btn color="success" @click="newTutorial">Add</v-btn>
-                  </v-card-actions>
-                </v-card>
-              </div>
-            </div>
+              <v-card-actions>
+                <v-btn color="success" @click="newTutorial">Add</v-btn>
+              </v-card-actions>
+            </v-card>
+          </div>
+        </div>
 
       </v-col>
 
 
 
-    <navigation-bar></navigation-bar>
+      <navigation-bar></navigation-bar>
     </v-row>
   </v-app>
 
