@@ -59,18 +59,5 @@
       "finish_Date": "11/30/21"
     }
   ],
-  "budgets": [
-    {
-      "id": 1,
-      "name": "wood triplex",
-      "quantity": 5,
-      "price": 1000
-    },
-    {
-      "name": "hola",
-      "quantity": "100",
-      "price": "100",
-      "id": 2
-    }
-  ]
+  "budgets": []
 }
