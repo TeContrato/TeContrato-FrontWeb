@@ -1,5 +1,6 @@
 import http from './http.common';
 
+
 class OffersApiService {
 
     getAll() {

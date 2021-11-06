@@ -74,7 +74,7 @@ export default {
     items: [
       { title: 'Home', icon: 'mdi-view-dashboard', to: '/dashboard' },
       { title: 'Projects', icon: 'mdi-briefcase-search', to: '/projects' },
-      { title: 'Notifications', icon: 'mdi-bell-badge', to: '/notifications' },
+      { title: 'Budget', icon: 'mdi-bell-badge', to: '/budget' },
       { title: 'Messages', icon: 'mdi-forum', to: '/messages' },
       { title: 'Offers', icon: 'mdi-briefcase', to: '/offers' },
       { title: 'Profile', icon: 'mdi-account', to: '/profile' },

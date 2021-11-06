@@ -52,7 +52,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/controlMenuContractor')
   },
   {
-
     path:'/searchcontractor',
     name:'searchcontractor',
     component: () => import(/* webpackChunkName: "about" */ '../views/Project/SearchContractor')
@@ -92,7 +91,10 @@ const routes = [
   },
 
   }
-
+    path: '/budget',
+    name: 'budget',
+    component: () => import(/* webpackChunkName: "about" */ '../views/budget')
+  },
 ]
 
 const router = new VueRouter({
